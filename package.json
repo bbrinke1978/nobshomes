@@ -1,0 +1,23 @@
+{
+  "name": "nobshomes",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "15.5.13",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "lucide-react": "^0.577.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "@types/react": "^19.1.2",
+    "typescript": "^5.8.3",
+    "tailwindcss": "^4.1.4",
+    "@tailwindcss/postcss": "^4.1.4"
+  }
+}

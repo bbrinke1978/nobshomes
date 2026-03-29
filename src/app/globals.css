@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* No BS Homes — Western Warmth palette */
+  --color-brand-50: #eef3fb;
+  --color-brand-100: #d4e0f5;
+  --color-brand-200: #a9c1eb;
+  --color-brand-300: #7ea2e1;
+  --color-brand-400: #4a78c8;
+  --color-brand-500: #1e4d8c;
+  --color-brand-600: #183d70;
+  --color-brand-700: #122e54;
+  --color-brand-800: #0c1e38;
+  --color-brand-900: #060f1c;
+
+  --color-sand-50: #fdf9f3;
+  --color-sand-100: #f9efe0;
+  --color-sand-200: #f0dcc0;
+  --color-sand-300: #e5c79a;
+  --color-sand-400: #d4a574;
+  --color-sand-500: #c4884f;
+  --color-sand-600: #a06a38;
+  --color-sand-700: #7a5029;
+  --color-sand-800: #54381c;
+  --color-sand-900: #2e1f0f;
+
+  --color-warm: #fdfbf7;
+  --color-cream: #faf5ec;
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+}
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: #334155;
+  background: var(--color-warm);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle noise grain overlay for warmth */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.015;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+/* Scroll reveal animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out both;
+}
+
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+
+/* Section divider — gentle wave */
+.section-wave {
+  background: linear-gradient(180deg, transparent 0%, var(--color-cream) 100%);
+}
+
+/* Trust badge glow */
+.trust-glow {
+  box-shadow: 0 0 0 1px rgba(30, 77, 140, 0.08), 0 4px 16px rgba(30, 77, 140, 0.06);
+}
+
+/* Heading style */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: #1e4d8c;
+}
+
+/* Hero gradient */
+.hero-gradient {
+  background: linear-gradient(135deg, #1e4d8c 0%, #122e54 60%, #0c1e38 100%);
+}
+
+/* CTA button styles */
+.btn-primary {
+  background: linear-gradient(135deg, #d4a574 0%, #c4884f 100%);
+  color: white;
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 8px rgba(212, 165, 116, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(212, 165, 116, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  border-radius: 0.75rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
