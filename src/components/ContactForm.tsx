@@ -1,15 +1,38 @@
 "use client";
 
 import { useState } from "react";
-import { Send, CheckCircle } from "lucide-react";
+import { Send, CheckCircle, Loader2 } from "lucide-react";
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // TODO: wire to Netlify Forms or email service
-    setSubmitted(true);
+    setSubmitting(true);
+    setError(null);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        setError("Something went wrong. Please call us instead.");
+      }
+    } catch {
+      setError("Something went wrong. Please call us instead.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   if (submitted) {
@@ -27,7 +50,14 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white rounded-2xl p-6 sm:p-8 trust-glow">
+    <form
+      onSubmit={handleSubmit}
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      className="bg-white rounded-2xl p-6 sm:p-8 trust-glow"
+    >
+      <input type="hidden" name="form-name" value="contact" />
       <h3
         className="text-xl sm:text-2xl font-bold text-brand-500 mb-1"
         style={{ fontFamily: "var(--font-display)" }}
@@ -94,11 +124,25 @@ export function ContactForm() {
 
         <button
           type="submit"
-          className="w-full btn-primary text-base inline-flex items-center justify-center gap-2"
+          disabled={submitting}
+          className="w-full btn-primary text-base inline-flex items-center justify-center gap-2 disabled:opacity-70"
         >
-          <Send className="h-4 w-4" />
-          Get My Free Offer
+          {submitting ? (
+            <>
+              <Loader2 className="h-4 w-4 animate-spin" />
+              Sending...
+            </>
+          ) : (
+            <>
+              <Send className="h-4 w-4" />
+              Get My Free Offer
+            </>
+          )}
         </button>
+
+        {error && (
+          <p className="text-sm text-center text-red-500 mt-2">{error}</p>
+        )}
 
         <p className="text-xs text-center text-slate-400 mt-2">
           Your information is private. We never share or sell your data.
