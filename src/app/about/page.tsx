@@ -40,6 +40,15 @@ export default function AboutPage() {
               </h2>
             </div>
 
+            {/* Utah landscape image */}
+            <div className="rounded-2xl overflow-hidden shadow-lg mb-10 max-w-2xl mx-auto">
+              <img
+                src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1000&q=75"
+                alt="Rural Utah landscape"
+                className="w-full h-64 object-cover"
+              />
+            </div>
+
             <div className="prose prose-lg mx-auto text-slate-600 leading-relaxed space-y-6">
               <p className="text-xl text-slate-700 font-medium">
                 It stands for our names — <strong>B</strong>rian and <strong>S</strong>hawn.

@@ -110,6 +110,19 @@ export default function HowItWorksPage() {
           </div>
         </section>
 
+        {/* Image break */}
+        <section className="py-0">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <div className="rounded-2xl overflow-hidden shadow-lg -mt-4 mb-0">
+              <img
+                src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=1200&q=75"
+                alt="Modest family home"
+                className="w-full h-56 sm:h-72 object-cover"
+              />
+            </div>
+          </div>
+        </section>
+
         {/* Our Promises */}
         <section className="py-16 sm:py-20 bg-cream">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">

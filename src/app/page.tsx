@@ -55,8 +55,17 @@ export default function HomePage() {
       <Header />
       <main>
         {/* ── Hero ── */}
-        <section className="hero-gradient relative overflow-hidden">
-          {/* Decorative diagonal line */}
+        <section className="relative overflow-hidden">
+          {/* Background image — rural home */}
+          <div className="absolute inset-0">
+            <img
+              src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1600&q=80"
+              alt=""
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-brand-900/95 via-brand-800/90 to-brand-700/80" />
+          </div>
+          {/* Decorative shapes */}
           <div className="absolute inset-0 opacity-[0.04]">
             <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-sand-400 -translate-y-1/2 translate-x-1/3" />
             <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-sand-400 translate-y-1/2 -translate-x-1/4" />
@@ -186,6 +195,15 @@ export default function HomePage() {
                 </Link>
               </div>
 
+              <div className="space-y-6">
+              {/* Rural home image */}
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=800&q=75"
+                  alt="Small rural home in Utah"
+                  className="w-full h-48 object-cover"
+                />
+              </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {situations.map((situation) => (
                   <div
