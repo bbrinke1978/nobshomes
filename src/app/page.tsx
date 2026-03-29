@@ -196,26 +196,26 @@ export default function HomePage() {
               </div>
 
               <div className="space-y-6">
-              {/* Rural home image */}
-              <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img
-                  src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=800&q=75"
-                  alt="Small rural home in Utah"
-                  className="w-full h-48 object-cover"
-                />
+                {/* Rural home image */}
+                <div className="rounded-2xl overflow-hidden shadow-lg">
+                  <img
+                    src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=800&q=75"
+                    alt="Small rural home in Utah"
+                    className="w-full h-48 object-cover"
+                  />
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {situations.map((situation) => (
+                    <div
+                      key={situation}
+                      className="flex items-center gap-3 bg-white rounded-xl px-4 py-3 trust-glow"
+                    >
+                      <CheckCircle className="h-5 w-5 text-sand-500 shrink-0" />
+                      <span className="text-sm font-medium text-slate-700">{situation}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {situations.map((situation) => (
-                  <div
-                    key={situation}
-                    className="flex items-center gap-3 bg-white rounded-xl px-4 py-3 trust-glow"
-                  >
-                    <CheckCircle className="h-5 w-5 text-sand-500 shrink-0" />
-                    <span className="text-sm font-medium text-slate-700">{situation}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </section>
 
