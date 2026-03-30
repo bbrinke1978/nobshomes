@@ -20,18 +20,18 @@ export function Header() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-500 shadow-md group-hover:shadow-lg transition-shadow">
-              <span className="text-white font-bold text-sm" style={{ fontFamily: "var(--font-display)" }}>NB</span>
-            </div>
-            <div className="hidden sm:block">
-              <p className="text-lg font-bold text-brand-500" style={{ fontFamily: "var(--font-display)" }}>
-                No BS Homes
-              </p>
-              <p className="text-[10px] uppercase tracking-[0.2em] text-sand-500 -mt-1 font-semibold">
-                {contactData.slogan}
-              </p>
-            </div>
+          <Link href="/" className="flex items-center group">
+            {/* Stamp logo on mobile, horizontal logo on desktop */}
+            <img
+              src="/images/logo/stamp-light.png"
+              alt="No BS Homes"
+              className="h-10 w-10 sm:hidden"
+            />
+            <img
+              src="/images/logo/horizontal-light.png"
+              alt="No BS Homes — Family Owned"
+              className="hidden sm:block h-10"
+            />
           </Link>
 
           {/* Desktop nav */}

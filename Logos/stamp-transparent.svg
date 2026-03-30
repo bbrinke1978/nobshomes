@@ -1,0 +1,19 @@
+<svg width="500" height="500" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: fully transparent — merch/print ready, all white text/elements -->
+  <defs>
+    <path id="arcTop" d="M 36,160 A 124,124 0 0,1 284,160"/>
+    <path id="arcBot" d="M 46,210 A 124,124 0 0,0 274,210"/>
+  </defs>
+  <circle cx="160" cy="160" r="150" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <text font-family="'Bebas Neue', 'Impact', sans-serif" font-size="17" fill="#ffffff" letter-spacing="8">
+    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">BRIAN &amp; SHAWN</textPath>
+  </text>
+  <text font-family="'Bebas Neue', 'Impact', sans-serif" font-size="14" fill="rgba(255,255,255,0.6)" letter-spacing="4">
+    <textPath href="#arcBot" startOffset="50%" text-anchor="middle">FAMILY OWNED · SINCE 2014</textPath>
+  </text>
+  <circle cx="50"  cy="88" r="3" fill="#ffffff" opacity="0.8"/>
+  <circle cx="270" cy="88" r="3" fill="#ffffff" opacity="0.8"/>
+  <text x="160" y="88" text-anchor="middle" font-family="'Bebas Neue', 'Impact', sans-serif" font-size="32" letter-spacing="14" fill="rgba(255,255,255,0.75)">NO</text>
+  <text x="160" y="215" text-anchor="middle" font-family="'Anton', 'Impact', sans-serif" font-size="124" fill="#ffffff">BS</text>
+  <text x="162" y="242" text-anchor="middle" font-family="'Bebas Neue', 'Impact', sans-serif" font-size="22" letter-spacing="14" fill="rgba(255,255,255,0.75)">HOMES</text>
+</svg>

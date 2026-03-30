@@ -34,12 +34,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h4
-              className="text-xl font-bold text-white mb-2"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
-              No BS Homes
-            </h4>
+            <img
+              src="/images/logo/horizontal-white.png"
+              alt="No BS Homes"
+              className="h-10 mb-3"
+            />
             <p className="text-sm text-brand-200 italic">&ldquo;{contactData.slogan}&rdquo;</p>
             <p className="text-sm text-brand-300 mt-3 leading-relaxed">
               Family-owned. Utah-based. We buy houses in any condition — no repairs, no fees, no hassle. Just honest deals for honest people.

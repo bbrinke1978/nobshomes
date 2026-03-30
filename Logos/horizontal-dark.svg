@@ -1,0 +1,14 @@
+<svg width="600" height="160" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: dark navy -->
+  <rect width="600" height="160" rx="6" fill="#1b2333"/>
+  <!-- Badge circle -->
+  <circle cx="80" cy="80" r="58" fill="none" stroke="#b8975a" stroke-width="2"/>
+  <text x="80" y="54" text-anchor="middle" font-family="'Bebas Neue', 'Impact', sans-serif" font-size="13" letter-spacing="5" fill="#8a9bb8">NO</text>
+  <text x="80" y="98" text-anchor="middle" font-family="'Anton', 'Impact', sans-serif" font-size="52" fill="#b8975a">BS</text>
+  <!-- Vertical divider -->
+  <line x1="158" y1="32" x2="158" y2="128" stroke="#2e3d55" stroke-width="1.5"/>
+  <!-- Text block -->
+  <text x="178" y="76" font-family="'Bebas Neue', 'Impact', sans-serif" font-size="48" letter-spacing="2" fill="#e8e0d0">No BS Homes</text>
+  <text x="179" y="98" font-family="'Bebas Neue', 'Impact', sans-serif" font-size="18" letter-spacing="7" fill="#8a9bb8">Family Owned</text>
+  <text x="180" y="118" font-family="Arial, sans-serif" font-size="10" letter-spacing="2" fill="#4a5570">BRIAN &amp; SHAWN · SINCE 2014</text>
+</svg>
