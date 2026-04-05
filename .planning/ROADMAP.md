@@ -28,7 +28,9 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. The old nobshomes.netlify.app URL still loads the site without error
   4. The phone number 435-250-3678 appears site-wide wherever contact info is shown
   5. The email contact@no-bshomes.com appears site-wide wherever contact info is shown
-**Plans**: TBD
+**Plans**: 1 plan
+Plans:
+- [ ] 01-01-PLAN.md — Configure GoDaddy DNS, register custom domain in Netlify, deploy, and verify
 
 ### Phase 2: Custom Email
 **Goal**: The team can send and receive email from @no-bshomes.com addresses that land in inboxes, not spam
@@ -60,6 +62,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Custom Domain | 0/TBD | Not started | - |
+| 1. Custom Domain | 0/1 | Not started | - |
 | 2. Custom Email | 0/TBD | Not started | - |
 | 3. Lead Integration | 0/TBD | Not started | - |
