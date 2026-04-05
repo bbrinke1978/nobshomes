@@ -9,9 +9,9 @@ Requirements for this milestone. Each maps to roadmap phases.
 
 ### Domain
 
-- [ ] **DOM-01**: Site loads on https://no-bshomes.com with valid SSL
-- [ ] **DOM-02**: Site loads on https://www.no-bshomes.com (redirect or serve)
-- [ ] **DOM-03**: Old nobshomes.netlify.app URL continues to work (Netlify default)
+- [x] **DOM-01**: Site loads on https://no-bshomes.com with valid SSL
+- [x] **DOM-02**: Site loads on https://www.no-bshomes.com (redirect or serve)
+- [x] **DOM-03**: Old nobshomes.netlify.app URL continues to work (Netlify default)
 
 ### Email
 
@@ -33,8 +33,8 @@ Requirements for this milestone. Each maps to roadmap phases.
 
 ### Contact Info
 
-- [ ] **CONT-01**: Phone number updated site-wide to 435-250-3678
-- [ ] **CONT-02**: Email updated site-wide to contact@no-bshomes.com
+- [x] **CONT-01**: Phone number updated site-wide to 435-250-3678
+- [x] **CONT-02**: Email updated site-wide to contact@no-bshomes.com
 
 ## v2 Requirements
 
@@ -68,9 +68,9 @@ Deferred to future milestone. Tracked but not in current roadmap.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DOM-01 | Phase 1 | Pending |
-| DOM-02 | Phase 1 | Pending |
-| DOM-03 | Phase 1 | Pending |
+| DOM-01 | Phase 1 | Complete |
+| DOM-02 | Phase 1 | Complete |
+| DOM-03 | Phase 1 | Complete |
 | EMAIL-01 | Phase 2 | Pending |
 | EMAIL-02 | Phase 2 | Pending |
 | EMAIL-03 | Phase 2 | Pending |
@@ -83,8 +83,8 @@ Deferred to future milestone. Tracked but not in current roadmap.
 | LEAD-05 | Phase 3 | Pending |
 | LEAD-06 | Phase 3 | Pending |
 | LEAD-07 | Phase 3 | Pending |
-| CONT-01 | Phase 1 | Pending |
-| CONT-02 | Phase 1 | Pending |
+| CONT-01 | Phase 1 | Complete |
+| CONT-02 | Phase 1 | Complete |
 
 **Coverage:**
 - v1 requirements: 17 total
