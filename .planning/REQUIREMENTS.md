@@ -15,11 +15,11 @@ Requirements for this milestone. Each maps to roadmap phases.
 
 ### Email
 
-- [ ] **EMAIL-01**: contact@no-bshomes.com receives email
-- [ ] **EMAIL-02**: brian@no-bshomes.com receives email
-- [ ] **EMAIL-03**: shawn@no-bshomes.com receives email
-- [ ] **EMAIL-04**: Email passes SPF, DKIM, and DMARC authentication checks
-- [ ] **EMAIL-05**: Contact email updated site-wide to contact@no-bshomes.com
+- [x] **EMAIL-01**: contact@no-bshomes.com receives email
+- [x] **EMAIL-02**: brian@no-bshomes.com receives email
+- [x] **EMAIL-03**: shawn@no-bshomes.com receives email
+- [x] **EMAIL-04**: Email passes SPF, DKIM, and DMARC authentication checks
+- [x] **EMAIL-05**: Contact email updated site-wide to contact@no-bshomes.com
 
 ### Lead Integration
 
@@ -71,11 +71,11 @@ Deferred to future milestone. Tracked but not in current roadmap.
 | DOM-01 | Phase 1 | Complete |
 | DOM-02 | Phase 1 | Complete |
 | DOM-03 | Phase 1 | Complete |
-| EMAIL-01 | Phase 2 | Pending |
-| EMAIL-02 | Phase 2 | Pending |
-| EMAIL-03 | Phase 2 | Pending |
-| EMAIL-04 | Phase 2 | Pending |
-| EMAIL-05 | Phase 2 | Pending |
+| EMAIL-01 | Phase 2 | Complete |
+| EMAIL-02 | Phase 2 | Complete |
+| EMAIL-03 | Phase 2 | Complete |
+| EMAIL-04 | Phase 2 | Complete |
+| EMAIL-05 | Phase 2 | Complete |
 | LEAD-01 | Phase 3 | Pending |
 | LEAD-02 | Phase 3 | Pending |
 | LEAD-03 | Phase 3 | Pending |

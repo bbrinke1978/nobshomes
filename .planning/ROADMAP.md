@@ -13,7 +13,7 @@ Three sequential phases that wire an existing marketing site to production-grade
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Custom Domain** - Point no-bshomes.com at Netlify and update site-wide contact text
-- [ ] **Phase 2: Custom Email** - Provision custom email addresses with full deliverability authentication
+- [x] **Phase 2: Custom Email** - Provision custom email addresses with full deliverability authentication
 - [ ] **Phase 3: Lead Integration** - Build HouseFinder API endpoint and wire dual-submit contact form
 
 ## Phase Details
@@ -66,5 +66,5 @@ Phases execute in numeric order: 1 → 2 → 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Custom Domain | 1/1 | Complete ✓ | 2026-04-05 |
-| 2. Custom Email | 0/2 | Not started | - |
+| 2. Custom Email | 2/2 | Complete ✓ | 2026-04-05 |
 | 3. Lead Integration | 0/TBD | Not started | - |
