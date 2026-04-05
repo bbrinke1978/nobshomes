@@ -42,7 +42,10 @@ Plans:
   3. A test email sent to shawn@no-bshomes.com arrives in the correct inbox
   4. MXToolbox confirms SPF, DKIM, and DMARC all pass for the domain
   5. A test email from a @no-bshomes.com address arrives in a Gmail inbox (not spam folder)
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 02-01-PLAN.md — Set up Zoho Mail account, verify domain, configure DNS records (MX, SPF, DKIM, DMARC), create 3 mailboxes
+- [ ] 02-02-PLAN.md — Verify all email requirements: MXToolbox checks, test delivery, deliverability, site contact email
 
 ### Phase 3: Lead Integration
 **Goal**: Every contact form submission becomes a trackable lead in HouseFinder with source "Website"
@@ -63,5 +66,5 @@ Phases execute in numeric order: 1 → 2 → 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Custom Domain | 1/1 | Complete ✓ | 2026-04-05 |
-| 2. Custom Email | 0/TBD | Not started | - |
+| 2. Custom Email | 0/2 | Not started | - |
 | 3. Lead Integration | 0/TBD | Not started | - |
