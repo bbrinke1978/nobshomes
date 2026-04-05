@@ -1,7 +1,7 @@
 export const contactData = {
-  phone: "(435) 555-0100",
-  phoneHref: "tel:+14355550100",
-  email: "info@nobshomes.com",
+  phone: "(435) 250-3678",
+  phoneHref: "tel:+14352503678",
+  email: "contact@no-bshomes.com",
   company: "No BS Homes",
   slogan: "The Best Last Option",
   address: "Price, Utah",
