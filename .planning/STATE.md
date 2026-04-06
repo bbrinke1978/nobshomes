@@ -10,9 +10,9 @@ See: .planning/PROJECT.md (updated 2026-04-05)
 ## Current Position
 
 Phase: 3 of 3 (Lead Integration)
-Plan: 1 of TBD in current phase
-Status: In progress
-Last activity: 2026-04-06 — 03-01 complete (HouseFinder Lead Ingest Endpoint)
+Plan: 2 of TBD in current phase
+Status: In progress — checkpoint pending human verification
+Last activity: 2026-04-05 — 03-02 tasks 1+2 complete; Task 3 checkpoint awaiting E2E verification after deploy
 
 Progress: [███████░░░] 70%
 
@@ -49,6 +49,9 @@ Recent decisions affecting current work:
 - 03-01: Store contact details in leadNotes as structured plain text matching existing note pattern
 - 03-01: propertyId stays nullable+unique — website leads have no scraper-matched property, uniqueness preserved for scraped leads
 - 03-01: WEBSITE_LEAD_API_KEY must be set in Azure App Service Configuration before endpoint can authenticate requests
+- 03-02: POST target changed to "/__forms.html" (not "/") — required for Netlify Forms to capture JS-submitted form data
+- 03-02: HouseFinder fetch is fire-and-forget with .catch() — user success gated only on Netlify response
+- 03-02: HOUSEFINDER_API_KEY kept server-side (no NEXT_PUBLIC_) — invisible in browser DevTools
 
 ### Pending Todos
 
@@ -62,6 +65,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-06
-Stopped at: Completed 03-01-PLAN.md (HouseFinder Lead Ingest Endpoint) — ready for 03-02 (No BS Homes form submission)
+Last session: 2026-04-05
+Stopped at: 03-02 checkpoint:human-verify — Tasks 1+2 committed (fd6570c, bb7cc5f); awaiting E2E verification after Netlify deploy + env var setup
 Resume file: None
