@@ -17,17 +17,35 @@ export function ContactForm() {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch("/", {
+      // Step 1: Netlify Forms — primary submission, user-facing
+      const netlifyRes = await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
+        body: new URLSearchParams(
+          formData as unknown as Record<string, string>
+        ).toString(),
       });
 
-      if (response.ok) {
-        setSubmitted(true);
-      } else {
+      if (!netlifyRes.ok) {
         setError("Something went wrong. Please call us instead.");
+        return;
       }
+
+      // Step 2: HouseFinder API — fire and forget (never blocks UX)
+      fetch("/api/submit-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.get("name"),
+          phone: formData.get("phone"),
+          address: formData.get("address"),
+          message: formData.get("message") ?? "",
+        }),
+      }).catch(() => {
+        // Silent — Netlify Forms is the safety net
+      });
+
+      setSubmitted(true);
     } catch {
       setError("Something went wrong. Please call us instead.");
     } finally {
