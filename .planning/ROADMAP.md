@@ -56,15 +56,18 @@ Plans:
   2. The lead appears in HouseFinder within seconds of form submission
   3. Submitting the form shows the user a success state even if HouseFinder is temporarily unreachable
   4. The HouseFinder API key is not visible in browser network requests or the client bundle
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 03-01-PLAN.md — HouseFinder: Drizzle migration (nullable propertyId) + POST /api/leads endpoint with Zod validation and x-api-key auth
+- [ ] 03-02-PLAN.md — No BS Homes: Netlify shadow form, server-side proxy route, and dual-submit ContactForm update
 
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3
+Phases execute in numeric order: 1 -> 2 -> 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Custom Domain | 1/1 | Complete ✓ | 2026-04-05 |
-| 2. Custom Email | 2/2 | Complete ✓ | 2026-04-05 |
-| 3. Lead Integration | 0/TBD | Not started | - |
+| 1. Custom Domain | 1/1 | Complete | 2026-04-05 |
+| 2. Custom Email | 2/2 | Complete | 2026-04-05 |
+| 3. Lead Integration | 0/2 | Not started | - |
