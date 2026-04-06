@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-04-05)
 ## Current Position
 
 Phase: 3 of 3 (Lead Integration)
-Plan: 0 of TBD in current phase
-Status: Ready to plan
-Last activity: 2026-04-05 — Phase 2 complete (Custom Email)
+Plan: 1 of TBD in current phase
+Status: In progress
+Last activity: 2026-04-06 — 03-01 complete (HouseFinder Lead Ingest Endpoint)
 
-Progress: [██████░░░░] 66%
+Progress: [███████░░░] 70%
 
 ## Performance Metrics
 
@@ -45,6 +45,10 @@ Recent decisions affecting current work:
 - Setup: Stay on GoDaddy DNS (A/CNAME records only) — no nameserver transfer to avoid breaking email MX records during domain setup
 - Setup: Dual-submit form (Netlify Forms first, then fire-and-forget to HouseFinder API proxy) — Netlify as spam filter and backup; API key kept server-side
 - Setup: Use Zoho Mail free plan for custom email — covers 5 users, 5 GB, 1 domain; verify availability at signup
+- 03-01: Use x-api-key header (not Authorization: Bearer) for server-to-server auth — simpler parsing, no token type handling
+- 03-01: Store contact details in leadNotes as structured plain text matching existing note pattern
+- 03-01: propertyId stays nullable+unique — website leads have no scraper-matched property, uniqueness preserved for scraped leads
+- 03-01: WEBSITE_LEAD_API_KEY must be set in Azure App Service Configuration before endpoint can authenticate requests
 
 ### Pending Todos
 
@@ -58,6 +62,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-05
-Stopped at: Phase 2 complete — ready to plan Phase 3 (Lead Integration)
+Last session: 2026-04-06
+Stopped at: Completed 03-01-PLAN.md (HouseFinder Lead Ingest Endpoint) — ready for 03-02 (No BS Homes form submission)
 Resume file: None
