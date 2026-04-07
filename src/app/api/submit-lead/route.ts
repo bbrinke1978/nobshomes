@@ -20,6 +20,9 @@ export async function POST(request: NextRequest) {
           name: body.name,
           phone: body.phone,
           address: body.address,
+          city: body.city,
+          state: body.state,
+          zip: body.zip,
           message: body.message ?? "",
         }),
       }

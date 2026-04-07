@@ -39,6 +39,9 @@ export function ContactForm() {
           name: formData.get("name"),
           phone: formData.get("phone"),
           address: formData.get("address"),
+          city: formData.get("city"),
+          state: formData.get("state"),
+          zip: formData.get("zip"),
           message: formData.get("message") ?? "",
         }),
       }).catch(() => {
@@ -115,16 +118,60 @@ export function ContactForm() {
 
         <div>
           <label htmlFor="address" className="block text-sm font-semibold text-slate-700 mb-1">
-            Property Address
+            Street Address
           </label>
           <input
             type="text"
             id="address"
             name="address"
             required
-            placeholder="123 Main St, Price, UT"
+            placeholder="123 Main St"
             className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-warm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-300 focus:border-brand-300 transition"
           />
+        </div>
+
+        <div className="grid grid-cols-6 gap-3">
+          <div className="col-span-3">
+            <label htmlFor="city" className="block text-sm font-semibold text-slate-700 mb-1">
+              City
+            </label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              required
+              placeholder="Price"
+              className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-warm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-300 focus:border-brand-300 transition"
+            />
+          </div>
+          <div className="col-span-1">
+            <label htmlFor="state" className="block text-sm font-semibold text-slate-700 mb-1">
+              State
+            </label>
+            <input
+              type="text"
+              id="state"
+              name="state"
+              required
+              defaultValue="UT"
+              maxLength={2}
+              className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-warm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-300 focus:border-brand-300 transition"
+            />
+          </div>
+          <div className="col-span-2">
+            <label htmlFor="zip" className="block text-sm font-semibold text-slate-700 mb-1">
+              Zip
+            </label>
+            <input
+              type="text"
+              id="zip"
+              name="zip"
+              required
+              placeholder="84501"
+              maxLength={10}
+              className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-warm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-300 focus:border-brand-300 transition"
+            />
+          </div>
         </div>
 
         <div>
