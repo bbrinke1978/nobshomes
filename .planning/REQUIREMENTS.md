@@ -36,6 +36,22 @@ Requirements for this milestone. Each maps to roadmap phases.
 - [x] **CONT-01**: Phone number updated site-wide to 435-250-3678
 - [x] **CONT-02**: Email updated site-wide to contact@no-bshomes.com
 
+### Analytics & SEO
+
+- [ ] **SEO-01**: GA4 tracks pageviews on no-bshomes.com (real-time dashboard confirms)
+- [ ] **SEO-02**: Form submission fires a GA4 conversion event
+- [ ] **SEO-03**: Google Search Console shows no-bshomes.com as verified property
+- [ ] **SEO-04**: /sitemap.xml returns valid XML listing all site pages
+- [ ] **SEO-05**: Structured data (JSON-LD LocalBusiness/RealEstateAgent) passes Rich Results Test
+- [ ] **SEO-06**: Google Business Profile created for No BS Homes
+
+### Voice Lead Pipeline
+
+- [ ] **VM-01**: Google Apps Script monitors Gmail for Google Voice voicemail emails
+- [ ] **VM-02**: Script extracts caller phone number and transcription text from voicemail email
+- [ ] **VM-03**: Script POSTs lead to HouseFinder /api/leads with leadSource "voicemail"
+- [ ] **VM-04**: Voicemail lead appears in HouseFinder dashboard with source badge
+
 ## v2 Requirements
 
 Deferred to future milestone. Tracked but not in current roadmap.
@@ -45,7 +61,6 @@ Deferred to future milestone. Tracked but not in current roadmap.
 - **CONV-01**: Testimonials / social proof section on homepage
 - **CONV-02**: Blog / content marketing pages
 - **CONV-03**: Property-specific landing pages
-- **CONV-04**: Google Analytics / conversion tracking
 
 ### Advanced Lead Features
 
@@ -86,11 +101,23 @@ Deferred to future milestone. Tracked but not in current roadmap.
 | CONT-01 | Phase 1 | Complete |
 | CONT-02 | Phase 1 | Complete |
 
+| SEO-01 | Phase 4 | Pending |
+| SEO-02 | Phase 4 | Pending |
+| SEO-03 | Phase 4 | Pending |
+| SEO-04 | Phase 4 | Pending |
+| SEO-05 | Phase 4 | Pending |
+| SEO-06 | Phase 4 | Pending |
+| VM-01 | Phase 5 | Pending |
+| VM-02 | Phase 5 | Pending |
+| VM-03 | Phase 5 | Pending |
+| VM-04 | Phase 5 | Pending |
+
 **Coverage:**
-- v1 requirements: 17 total
-- Mapped to phases: 17
+- v1.0 requirements: 17 total (all complete)
+- v1.1 requirements: 10 total (0 complete)
+- Mapped to phases: 27
 - Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-04-05*
-*Last updated: 2026-04-05 after initial definition*
+*Last updated: 2026-04-07 after v1.1 milestone phases added*

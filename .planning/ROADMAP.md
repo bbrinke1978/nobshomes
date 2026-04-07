@@ -2,7 +2,7 @@
 
 ## Overview
 
-Three sequential phases that wire an existing marketing site to production-grade infrastructure. Phase 1 points the custom domain at the live Netlify deployment. Phase 2 provisions custom email addresses and updates contact info site-wide. Phase 3 builds the HouseFinder API endpoint and wires the contact form to dual-submit, so every form submission becomes a trackable lead.
+Phases 1-3 (v1.0) wired the marketing site to production infrastructure: custom domain, email, and lead integration. Phases 4-5 (v1.1) add analytics/SEO visibility and a voicemail-to-lead pipeline.
 
 ## Phases
 
@@ -15,6 +15,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Custom Domain** - Point no-bshomes.com at Netlify and update site-wide contact text
 - [x] **Phase 2: Custom Email** - Provision custom email addresses with full deliverability authentication
 - [x] **Phase 3: Lead Integration** - Build HouseFinder API endpoint and wire dual-submit contact form
+- [ ] **Phase 4: Analytics & SEO** - GA4, Google Search Console, sitemap, structured data, Google Business Profile
+- [ ] **Phase 5: Voice Lead Pipeline** - Google Voice voicemail transcription → HouseFinder lead automation
 
 ## Phase Details
 
@@ -61,13 +63,39 @@ Plans:
 - [x] 03-01-PLAN.md — HouseFinder: Drizzle migration (nullable propertyId) + POST /api/leads endpoint with Zod validation and x-api-key auth
 - [x] 03-02-PLAN.md — No BS Homes: Netlify shadow form, server-side proxy route, and dual-submit ContactForm update
 
+### Phase 4: Analytics & SEO
+**Goal**: Site is tracked in GA4 with form conversion events, verified in GSC with sitemap, has structured data for local SEO, and Google Business Profile is claimed
+**Depends on**: Phase 1
+**Requirements**: SEO-01, SEO-02, SEO-03, SEO-04, SEO-05, SEO-06
+**Success Criteria** (what must be TRUE):
+  1. GA4 real-time dashboard shows pageviews when visiting no-bshomes.com
+  2. Form submission fires a GA4 conversion event
+  3. Google Search Console shows no-bshomes.com as a verified property
+  4. /sitemap.xml returns valid XML with all site pages
+  5. Google Rich Results Test shows valid LocalBusiness structured data
+  6. Google Business Profile is created and pending/verified
+**Plans**: TBD
+
+### Phase 5: Voice Lead Pipeline
+**Goal**: Voicemails left on 435-250-3678 automatically create leads in HouseFinder with source "voicemail"
+**Depends on**: Phase 3
+**Requirements**: VM-01, VM-02, VM-03, VM-04
+**Success Criteria** (what must be TRUE):
+  1. A voicemail left on 435-250-3678 creates a lead in HouseFinder within 5 minutes
+  2. The lead has the caller's phone number and voicemail transcription text
+  3. The lead appears in HouseFinder dashboard with "Voicemail" source badge
+  4. Pipeline handles garbled transcriptions gracefully (phone number always captured)
+**Plans**: TBD
+
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 -> 2 -> 3
+Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Custom Domain | 1/1 | Complete | 2026-04-05 |
 | 2. Custom Email | 2/2 | Complete | 2026-04-05 |
 | 3. Lead Integration | 2/2 | Complete ✓ | 2026-04-06 |
+| 4. Analytics & SEO | 0/TBD | Not started | - |
+| 5. Voice Lead Pipeline | 0/TBD | Not started | - |
