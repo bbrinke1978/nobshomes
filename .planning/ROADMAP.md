@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Custom Domain** - Point no-bshomes.com at Netlify and update site-wide contact text
 - [x] **Phase 2: Custom Email** - Provision custom email addresses with full deliverability authentication
-- [ ] **Phase 3: Lead Integration** - Build HouseFinder API endpoint and wire dual-submit contact form
+- [x] **Phase 3: Lead Integration** - Build HouseFinder API endpoint and wire dual-submit contact form
 
 ## Phase Details
 
@@ -44,8 +44,8 @@ Plans:
   5. A test email from a @no-bshomes.com address arrives in a Gmail inbox (not spam folder)
 **Plans**: 2 plans
 Plans:
-- [ ] 02-01-PLAN.md — Set up Zoho Mail account, verify domain, configure DNS records (MX, SPF, DKIM, DMARC), create 3 mailboxes
-- [ ] 02-02-PLAN.md — Verify all email requirements: MXToolbox checks, test delivery, deliverability, site contact email
+- [x] 02-01-PLAN.md — Email configured via Google Workspace (not Zoho) with MX/SPF/DKIM/DMARC
+- [x] 02-02-PLAN.md — All email requirements verified: deliverability confirmed
 
 ### Phase 3: Lead Integration
 **Goal**: Every contact form submission becomes a trackable lead in HouseFinder with source "Website"
@@ -58,8 +58,8 @@ Plans:
   4. The HouseFinder API key is not visible in browser network requests or the client bundle
 **Plans**: 2 plans
 Plans:
-- [ ] 03-01-PLAN.md — HouseFinder: Drizzle migration (nullable propertyId) + POST /api/leads endpoint with Zod validation and x-api-key auth
-- [ ] 03-02-PLAN.md — No BS Homes: Netlify shadow form, server-side proxy route, and dual-submit ContactForm update
+- [x] 03-01-PLAN.md — HouseFinder: Drizzle migration (nullable propertyId) + POST /api/leads endpoint with Zod validation and x-api-key auth
+- [x] 03-02-PLAN.md — No BS Homes: Netlify shadow form, server-side proxy route, and dual-submit ContactForm update
 
 ## Progress
 
@@ -70,4 +70,4 @@ Phases execute in numeric order: 1 -> 2 -> 3
 |-------|----------------|--------|-----------|
 | 1. Custom Domain | 1/1 | Complete | 2026-04-05 |
 | 2. Custom Email | 2/2 | Complete | 2026-04-05 |
-| 3. Lead Integration | 0/2 | Not started | - |
+| 3. Lead Integration | 2/2 | Complete ✓ | 2026-04-06 |

@@ -27,8 +27,8 @@ Requirements for this milestone. Each maps to roadmap phases.
 - [x] **LEAD-02**: HouseFinder /api/leads creates a lead record with leadSource: "website"
 - [x] **LEAD-03**: HouseFinder /api/leads validates input and returns appropriate error responses
 - [x] **LEAD-04**: HouseFinder /api/leads authenticates requests via API key
-- [ ] **LEAD-05**: No BS Homes form submits to both Netlify Forms and HouseFinder API
-- [ ] **LEAD-06**: HouseFinder API failure does not block form submission success for the user
+- [x] **LEAD-05**: No BS Homes form submits to both Netlify Forms and HouseFinder API
+- [x] **LEAD-06**: HouseFinder API failure does not block form submission success for the user
 - [x] **LEAD-07**: Website lead appears in HouseFinder dashboard with "Website" source badge
 
 ### Contact Info
@@ -80,8 +80,8 @@ Deferred to future milestone. Tracked but not in current roadmap.
 | LEAD-02 | Phase 3 | Complete |
 | LEAD-03 | Phase 3 | Complete |
 | LEAD-04 | Phase 3 | Complete |
-| LEAD-05 | Phase 3 | Pending |
-| LEAD-06 | Phase 3 | Pending |
+| LEAD-05 | Phase 3 | Complete |
+| LEAD-06 | Phase 3 | Complete |
 | LEAD-07 | Phase 3 | Complete |
 | CONT-01 | Phase 1 | Complete |
 | CONT-02 | Phase 1 | Complete |
