@@ -88,7 +88,11 @@ Plans:
   2. The lead has the caller's phone number and voicemail transcription text
   3. The lead appears in HouseFinder dashboard with "Voicemail" source badge
   4. Pipeline handles garbled transcriptions gracefully (phone number always captured)
-**Plans**: TBD
+**Plans**: 3 plans
+Plans:
+- [ ] 05-01-PLAN.md — HouseFinder API: accept optional source field, make name/address optional for voicemail leads
+- [ ] 05-02-PLAN.md — Google Apps Script: Gmail monitor, email parsing, API POST with label-based deduplication
+- [ ] 05-03-PLAN.md — End-to-end verification: test voicemail creates lead with Voicemail badge
 
 ## Progress
 
@@ -101,4 +105,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 2. Custom Email | 2/2 | Complete | 2026-04-05 |
 | 3. Lead Integration | 2/2 | Complete ✓ | 2026-04-06 |
 | 4. Analytics & SEO | 2/2 | Complete ✓ | 2026-04-07 |
-| 5. Voice Lead Pipeline | 0/TBD | Not started | - |
+| 5. Voice Lead Pipeline | 0/3 | Not started | - |
