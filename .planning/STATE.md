@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-04-05)
 ## Current Position
 
 Phase: 6 of 6 (Content & Gallery)
-Plan: 0 of TBD in current phase
-Status: Ready to plan
-Last activity: 2026-04-07 — Added Phase 6 (testimonials, blog, gallery)
+Plan: 1 of TBD in current phase
+Status: In Progress
+Last activity: 2026-04-05 — Completed 06-01: testimonials + gallery page
 
-Progress: [████████░░] 83%
+Progress: [█████████░] 90%
 
 ## Performance Metrics
 
@@ -35,6 +35,7 @@ Progress: [████████░░] 83%
 
 *Updated after each plan completion*
 | Phase 04 P01 | 2 | 2 tasks | 5 files |
+| Phase 06-content-gallery P01 | 12min | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -60,6 +61,8 @@ Recent decisions affecting current work:
 - 05-01: source defaults to 'website' when omitted — existing website form flow unchanged
 - 05-01: name and address made optional with empty-string defaults — voicemail leads POST with phone+message+source only
 - 05-01: noteLines conditionally includes Name/Address — omit when empty rather than printing blank lines
+- [Phase 06-01]: Gallery uses data manifest pattern (gallery-data.ts) — user adds entry and drops file in public/images/gallery/ to add a new image
+- [Phase 06-01]: Testimonials are placeholder content — user replaces name/quote/location with real homeowner stories
 
 ### Pending Todos
 
@@ -73,6 +76,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-08
-Stopped at: Phase 5 Plan 01 complete — /api/leads updated for voicemail source (optional name/address), LEAD_SOURCES has website+voicemail badges, VALID_LEAD_SOURCES includes voicemail. Ready for Plan 02 (Google Apps Script pipeline).
+Last session: 2026-04-05
+Stopped at: Phase 6 Plan 01 complete — homepage testimonials section and /gallery page with data manifest pattern shipped. User should replace placeholder testimonials/images with real content.
 Resume file: None
