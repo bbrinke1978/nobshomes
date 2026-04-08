@@ -17,6 +17,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 3: Lead Integration** - Build HouseFinder API endpoint and wire dual-submit contact form
 - [x] **Phase 4: Analytics & SEO** - GA4, Google Search Console, sitemap, structured data, Google Business Profile
 - [x] **Phase 5: Voice Lead Pipeline** - Google Voice voicemail transcription → HouseFinder lead automation
+- [ ] **Phase 6: Content & Gallery** - Testimonials section, blog system, project gallery page
 
 ## Phase Details
 
@@ -94,10 +95,23 @@ Plans:
 - [x] 05-02-PLAN.md — Google Apps Script: Gmail monitor, email parsing, API POST with label-based deduplication
 - [x] 05-03-PLAN.md — End-to-end verification: test voicemail creates lead with Voicemail badge
 
+### Phase 6: Content & Gallery
+**Goal**: Site has social proof (testimonials), a blog for SEO content, and a gallery showcasing past projects
+**Depends on**: Phase 1
+**Requirements**: CONTENT-01, CONTENT-02, CONTENT-03, CONTENT-04, CONTENT-05, CONTENT-06
+**Success Criteria** (what must be TRUE):
+  1. Homepage has a testimonials section with placeholder content ready to fill in
+  2. /blog route exists with at least one sample post
+  3. Blog posts render from markdown files (no external CMS needed)
+  4. /gallery route exists with a responsive image grid
+  5. Gallery images can be added by dropping files in a folder (no code changes needed)
+  6. Navigation header includes Blog and Gallery links
+**Plans**: TBD
+
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
+Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
@@ -106,3 +120,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 3. Lead Integration | 2/2 | Complete ✓ | 2026-04-06 |
 | 4. Analytics & SEO | 2/2 | Complete ✓ | 2026-04-07 |
 | 5. Voice Lead Pipeline | 3/3 | Complete ✓ | 2026-04-07 |
+| 6. Content & Gallery | 0/TBD | Not started | - |
