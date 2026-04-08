@@ -55,11 +55,11 @@ Requirements for this milestone. Each maps to roadmap phases.
 ### Content & Gallery
 
 - [x] **CONTENT-01**: Homepage has testimonials section with placeholder cards
-- [ ] **CONTENT-02**: /blog route lists blog posts with titles, dates, and excerpts
-- [ ] **CONTENT-03**: Blog posts render from local markdown files (no external CMS)
+- [x] **CONTENT-02**: /blog route lists blog posts with titles, dates, and excerpts
+- [x] **CONTENT-03**: Blog posts render from local markdown files (no external CMS)
 - [x] **CONTENT-04**: /gallery route displays responsive image grid of past projects
 - [x] **CONTENT-05**: Gallery images loadable by adding files to public/images/gallery/
-- [ ] **CONTENT-06**: Header navigation includes Blog and Gallery links
+- [x] **CONTENT-06**: Header navigation includes Blog and Gallery links
 
 ## v2 Requirements
 
@@ -118,11 +118,11 @@ Deferred to future milestone. Tracked but not in current roadmap.
 | VM-03 | Phase 5 | Complete |
 | VM-04 | Phase 5 | Complete |
 | CONTENT-01 | Phase 6 | Complete |
-| CONTENT-02 | Phase 6 | Pending |
-| CONTENT-03 | Phase 6 | Pending |
+| CONTENT-02 | Phase 6 | Complete |
+| CONTENT-03 | Phase 6 | Complete |
 | CONTENT-04 | Phase 6 | Complete |
 | CONTENT-05 | Phase 6 | Complete |
-| CONTENT-06 | Phase 6 | Pending |
+| CONTENT-06 | Phase 6 | Complete |
 
 **Coverage:**
 - v1.0 requirements: 17 total (all complete)

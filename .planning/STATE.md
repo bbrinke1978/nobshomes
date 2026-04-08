@@ -36,6 +36,7 @@ Progress: [█████████░] 90%
 *Updated after each plan completion*
 | Phase 04 P01 | 2 | 2 tasks | 5 files |
 | Phase 06-content-gallery P01 | 12min | 2 tasks | 6 files |
+| Phase 06-content-gallery P02 | 2 minutes | 2 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -63,6 +64,8 @@ Recent decisions affecting current work:
 - 05-01: noteLines conditionally includes Name/Address — omit when empty rather than printing blank lines
 - [Phase 06-01]: Gallery uses data manifest pattern (gallery-data.ts) — user adds entry and drops file in public/images/gallery/ to add a new image
 - [Phase 06-01]: Testimonials are placeholder content — user replaces name/quote/location with real homeowner stories
+- [Phase 06-content-gallery]: Use gray-matter + custom regex markdownToHtml instead of remark/rehype chain — keeps deps minimal
+- [Phase 06-content-gallery]: Next.js 15 async params pattern for generateMetadata and blog post page
 
 ### Pending Todos
 
