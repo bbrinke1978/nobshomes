@@ -47,8 +47,8 @@ Requirements for this milestone. Each maps to roadmap phases.
 
 ### Voice Lead Pipeline
 
-- [ ] **VM-01**: Google Apps Script monitors Gmail for Google Voice voicemail emails
-- [ ] **VM-02**: Script extracts caller phone number and transcription text from voicemail email
+- [x] **VM-01**: Google Apps Script monitors Gmail for Google Voice voicemail emails
+- [x] **VM-02**: Script extracts caller phone number and transcription text from voicemail email
 - [x] **VM-03**: Script POSTs lead to HouseFinder /api/leads with leadSource "voicemail"
 - [x] **VM-04**: Voicemail lead appears in HouseFinder dashboard with source badge
 
@@ -107,8 +107,8 @@ Deferred to future milestone. Tracked but not in current roadmap.
 | SEO-04 | Phase 4 | Complete |
 | SEO-05 | Phase 4 | Complete |
 | SEO-06 | Phase 4 | Complete |
-| VM-01 | Phase 5 | Pending |
-| VM-02 | Phase 5 | Pending |
+| VM-01 | Phase 5 | Complete |
+| VM-02 | Phase 5 | Complete |
 | VM-03 | Phase 5 | Complete |
 | VM-04 | Phase 5 | Complete |
 
