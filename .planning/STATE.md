@@ -37,6 +37,7 @@ Progress: [████████░░] 86%
 | Phase 04 P01 | 2 | 2 tasks | 5 files |
 | Phase 06-content-gallery P01 | 12min | 2 tasks | 6 files |
 | Phase 06-content-gallery P02 | 2 minutes | 2 tasks | 8 files |
+| Phase 07-admin-portal P02 | 3min | 2 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -66,6 +67,8 @@ Recent decisions affecting current work:
 - [Phase 06-01]: Testimonials are placeholder content — user replaces name/quote/location with real homeowner stories
 - [Phase 06-content-gallery]: Use gray-matter + custom regex markdownToHtml instead of remark/rehype chain — keeps deps minimal
 - [Phase 06-content-gallery]: Next.js 15 async params pattern for generateMetadata and blog post page
+- [Phase 07-02]: next-auth@beta JWT sessions — no database session tables required; email allowlist in signIn callback for brian@ and shawn@
+- [Phase 07-02]: Admin layout is nested fragment (no html/body) — root layout owns document structure in Next.js App Router
 
 ### Pending Todos
 

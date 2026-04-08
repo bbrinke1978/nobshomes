@@ -63,8 +63,8 @@ Requirements for this milestone. Each maps to roadmap phases.
 
 ### Admin Portal
 
-- [ ] **ADMIN-01**: /admin requires Google OAuth login — unauthenticated users redirected
-- [ ] **ADMIN-02**: Only allowlisted @no-bshomes.com emails (brian, shawn, admin) can access admin
+- [x] **ADMIN-01**: /admin requires Google OAuth login — unauthenticated users redirected
+- [x] **ADMIN-02**: Only allowlisted @no-bshomes.com emails (brian, shawn, admin) can access admin
 - [ ] **ADMIN-03**: Admin can drag-and-drop upload gallery images to Azure Blob Storage
 - [ ] **ADMIN-04**: Admin can manage gallery images (add, reorder, delete, edit captions)
 - [ ] **ADMIN-05**: Admin can create and edit blog posts with rich text editor
@@ -136,8 +136,8 @@ Deferred to future milestone. Tracked but not in current roadmap.
 | CONTENT-04 | Phase 6 | Complete |
 | CONTENT-05 | Phase 6 | Complete |
 | CONTENT-06 | Phase 6 | Complete |
-| ADMIN-01 | Phase 7 | Pending |
-| ADMIN-02 | Phase 7 | Pending |
+| ADMIN-01 | Phase 7 | Complete |
+| ADMIN-02 | Phase 7 | Complete |
 | ADMIN-03 | Phase 7 | Pending |
 | ADMIN-04 | Phase 7 | Pending |
 | ADMIN-05 | Phase 7 | Pending |
