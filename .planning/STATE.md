@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-04-05)
 
 **Core value:** Distressed homeowners can quickly submit their information and get connected to No BS Homes — every form submission automatically becomes a trackable lead in HouseFinder.
-**Current focus:** Phase 4 — Analytics & SEO
+**Current focus:** Phase 5 — Voice Lead Pipeline
 
 ## Current Position
 
-Phase: 4 of 5 (Analytics & SEO)
-Plan: 1 of TBD in current phase
-Status: In Progress
-Last activity: 2026-04-08 — Completed 04-01 (GA4, structured data, sitemap, robots)
+Phase: 5 of 5 (Voice Lead Pipeline)
+Plan: 0 of TBD in current phase
+Status: Ready to plan
+Last activity: 2026-04-07 — Phase 4 complete (Analytics & SEO)
 
-Progress: [██████░░░░] 60% (v1.0 complete, v1.1 starting)
+Progress: [████████░░] 80%
 
 ## Performance Metrics
 
@@ -69,6 +69,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-08
-Stopped at: Completed 04-01-PLAN.md — GA4, JSON-LD structured data, sitemap, robots.txt, FAQPage schema all implemented and committed. Set NEXT_PUBLIC_GA_ID in Netlify env vars to activate tracking.
+Last session: 2026-04-07
+Stopped at: Phase 4 complete — GA4 (G-33FK8CFR8D), GSC verified, sitemap submitted, structured data live, GBP created under admin@no-bshomes.com (pending postcard). Ready for Phase 5 (Voice Lead Pipeline).
 Resume file: None

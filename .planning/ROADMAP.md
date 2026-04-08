@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Custom Domain** - Point no-bshomes.com at Netlify and update site-wide contact text
 - [x] **Phase 2: Custom Email** - Provision custom email addresses with full deliverability authentication
 - [x] **Phase 3: Lead Integration** - Build HouseFinder API endpoint and wire dual-submit contact form
-- [ ] **Phase 4: Analytics & SEO** - GA4, Google Search Console, sitemap, structured data, Google Business Profile
+- [x] **Phase 4: Analytics & SEO** - GA4, Google Search Console, sitemap, structured data, Google Business Profile
 - [ ] **Phase 5: Voice Lead Pipeline** - Google Voice voicemail transcription → HouseFinder lead automation
 
 ## Phase Details
@@ -76,8 +76,8 @@ Plans:
   6. Google Business Profile is created and pending/verified
 **Plans**: 2 plans
 Plans:
-- [ ] 04-01-PLAN.md — GA4 analytics, form conversion tracking, sitemap, robots.txt, and structured data (JSON-LD)
-- [ ] 04-02-PLAN.md — GA4 property setup, GSC verification, GBP creation (manual checkpoints)
+- [x] 04-01-PLAN.md — GA4 analytics, form conversion tracking, sitemap, robots.txt, and structured data (JSON-LD)
+- [x] 04-02-PLAN.md — GA4 property setup, GSC verification, GBP creation (manual checkpoints)
 
 ### Phase 5: Voice Lead Pipeline
 **Goal**: Voicemails left on 435-250-3678 automatically create leads in HouseFinder with source "voicemail"
@@ -100,5 +100,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 1. Custom Domain | 1/1 | Complete | 2026-04-05 |
 | 2. Custom Email | 2/2 | Complete | 2026-04-05 |
 | 3. Lead Integration | 2/2 | Complete ✓ | 2026-04-06 |
-| 4. Analytics & SEO | 0/2 | Planning complete | - |
+| 4. Analytics & SEO | 2/2 | Complete ✓ | 2026-04-07 |
 | 5. Voice Lead Pipeline | 0/TBD | Not started | - |
