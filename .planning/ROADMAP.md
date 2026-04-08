@@ -106,7 +106,10 @@ Plans:
   4. /gallery route exists with a responsive image grid
   5. Gallery images can be added by dropping files in a folder (no code changes needed)
   6. Navigation header includes Blog and Gallery links
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 06-01-PLAN.md — Testimonials section on homepage + gallery page with responsive image grid
+- [ ] 06-02-PLAN.md — Markdown blog system with sample post + navigation update
 
 ## Progress
 
@@ -120,4 +123,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | 3. Lead Integration | 2/2 | Complete ✓ | 2026-04-06 |
 | 4. Analytics & SEO | 2/2 | Complete ✓ | 2026-04-07 |
 | 5. Voice Lead Pipeline | 3/3 | Complete ✓ | 2026-04-07 |
-| 6. Content & Gallery | 0/TBD | Not started | - |
+| 6. Content & Gallery | 0/2 | Not started | - |
