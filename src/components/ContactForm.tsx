@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Send, CheckCircle, Loader2 } from "lucide-react";
+import { sendGAEvent } from "@next/third-parties/google";
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -30,6 +31,13 @@ export function ContactForm() {
         setError("Something went wrong. Please call us instead.");
         return;
       }
+
+      // GA4 conversion event — fires only on successful Netlify submission
+      sendGAEvent('event', 'generate_lead', {
+        event_category: 'contact_form',
+        event_label: 'homepage_contact',
+        value: 1,
+      });
 
       // Step 2: HouseFinder API — fire and forget (never blocks UX)
       fetch("/api/submit-lead", {
