@@ -127,7 +127,12 @@ Plans:
   8. Testimonials section renders from database (not hardcoded)
   9. Public pages load fast (no auth required for visitors)
   10. Image uploads are optimized and served via Azure Blob CDN
-**Plans**: TBD
+**Plans**: 4 plans
+Plans:
+- [ ] 07-01-PLAN.md — Database setup: Drizzle ORM, nbs_ tables, migration, seed static content
+- [ ] 07-02-PLAN.md — Authentication: NextAuth v5 Google OAuth, middleware, admin login + dashboard
+- [ ] 07-03-PLAN.md — Azure Blob uploads + gallery admin with drag-drop, public gallery migration
+- [ ] 07-04-PLAN.md — Blog admin with TipTap editor + testimonials admin, public pages migration
 
 ## Progress
 
@@ -142,4 +147,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 | 4. Analytics & SEO | 2/2 | Complete ✓ | 2026-04-07 |
 | 5. Voice Lead Pipeline | 3/3 | Complete ✓ | 2026-04-07 |
 | 6. Content & Gallery | 2/2 | Complete ✓ | 2026-04-07 |
-| 7. Admin Portal | 0/TBD | Not started | - |
+| 7. Admin Portal | 0/4 | Not started | - |
