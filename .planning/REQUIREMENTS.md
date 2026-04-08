@@ -38,11 +38,11 @@ Requirements for this milestone. Each maps to roadmap phases.
 
 ### Analytics & SEO
 
-- [ ] **SEO-01**: GA4 tracks pageviews on no-bshomes.com (real-time dashboard confirms)
-- [ ] **SEO-02**: Form submission fires a GA4 conversion event
+- [x] **SEO-01**: GA4 tracks pageviews on no-bshomes.com (real-time dashboard confirms)
+- [x] **SEO-02**: Form submission fires a GA4 conversion event
 - [ ] **SEO-03**: Google Search Console shows no-bshomes.com as verified property
-- [ ] **SEO-04**: /sitemap.xml returns valid XML listing all site pages
-- [ ] **SEO-05**: Structured data (JSON-LD LocalBusiness/RealEstateAgent) passes Rich Results Test
+- [x] **SEO-04**: /sitemap.xml returns valid XML listing all site pages
+- [x] **SEO-05**: Structured data (JSON-LD LocalBusiness/RealEstateAgent) passes Rich Results Test
 - [ ] **SEO-06**: Google Business Profile created for No BS Homes
 
 ### Voice Lead Pipeline
@@ -101,11 +101,11 @@ Deferred to future milestone. Tracked but not in current roadmap.
 | CONT-01 | Phase 1 | Complete |
 | CONT-02 | Phase 1 | Complete |
 
-| SEO-01 | Phase 4 | Pending |
-| SEO-02 | Phase 4 | Pending |
+| SEO-01 | Phase 4 | Complete |
+| SEO-02 | Phase 4 | Complete |
 | SEO-03 | Phase 4 | Pending |
-| SEO-04 | Phase 4 | Pending |
-| SEO-05 | Phase 4 | Pending |
+| SEO-04 | Phase 4 | Complete |
+| SEO-05 | Phase 4 | Complete |
 | SEO-06 | Phase 4 | Pending |
 | VM-01 | Phase 5 | Pending |
 | VM-02 | Phase 5 | Pending |
