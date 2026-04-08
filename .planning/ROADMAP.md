@@ -18,6 +18,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 4: Analytics & SEO** - GA4, Google Search Console, sitemap, structured data, Google Business Profile
 - [x] **Phase 5: Voice Lead Pipeline** - Google Voice voicemail transcription → HouseFinder lead automation
 - [x] **Phase 6: Content & Gallery** - Testimonials section, blog system, project gallery page
+- [ ] **Phase 7: Admin Portal** - Authenticated admin at /admin with Google OAuth, Azure Blob uploads, DB-backed content management
 
 ## Phase Details
 
@@ -111,10 +112,27 @@ Plans:
 - [x] 06-01-PLAN.md — Testimonials section on homepage + gallery page with responsive image grid
 - [x] 06-02-PLAN.md — Markdown blog system with sample post + navigation update
 
+### Phase 7: Admin Portal
+**Goal**: Secure admin portal at /admin with Google OAuth, drag-and-drop image uploads to Azure Blob Storage, and CRUD for gallery, blog posts, and testimonials — all backed by HouseFinder's PostgreSQL
+**Depends on**: Phase 6
+**Requirements**: ADMIN-01, ADMIN-02, ADMIN-03, ADMIN-04, ADMIN-05, ADMIN-06, ADMIN-07, ADMIN-08, ADMIN-09, ADMIN-10
+**Success Criteria** (what must be TRUE):
+  1. /admin redirects to Google OAuth if not authenticated
+  2. Only allowlisted @no-bshomes.com emails can access admin
+  3. Admin can drag-and-drop upload gallery images to Azure Blob Storage
+  4. Admin can create, edit, and delete blog posts with a rich editor
+  5. Admin can add, edit, and delete testimonials
+  6. Gallery page renders images from database + Azure Blob URLs
+  7. Blog page renders posts from database (not markdown files)
+  8. Testimonials section renders from database (not hardcoded)
+  9. Public pages load fast (no auth required for visitors)
+  10. Image uploads are optimized and served via Azure Blob CDN
+**Plans**: TBD
+
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
+Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
@@ -124,3 +142,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | 4. Analytics & SEO | 2/2 | Complete ✓ | 2026-04-07 |
 | 5. Voice Lead Pipeline | 3/3 | Complete ✓ | 2026-04-07 |
 | 6. Content & Gallery | 2/2 | Complete ✓ | 2026-04-07 |
+| 7. Admin Portal | 0/TBD | Not started | - |
