@@ -74,7 +74,10 @@ Plans:
   4. /sitemap.xml returns valid XML with all site pages
   5. Google Rich Results Test shows valid LocalBusiness structured data
   6. Google Business Profile is created and pending/verified
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 04-01-PLAN.md — GA4 analytics, form conversion tracking, sitemap, robots.txt, and structured data (JSON-LD)
+- [ ] 04-02-PLAN.md — GA4 property setup, GSC verification, GBP creation (manual checkpoints)
 
 ### Phase 5: Voice Lead Pipeline
 **Goal**: Voicemails left on 435-250-3678 automatically create leads in HouseFinder with source "voicemail"
@@ -97,5 +100,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 1. Custom Domain | 1/1 | Complete | 2026-04-05 |
 | 2. Custom Email | 2/2 | Complete | 2026-04-05 |
 | 3. Lead Integration | 2/2 | Complete ✓ | 2026-04-06 |
-| 4. Analytics & SEO | 0/TBD | Not started | - |
+| 4. Analytics & SEO | 0/2 | Planning complete | - |
 | 5. Voice Lead Pipeline | 0/TBD | Not started | - |
