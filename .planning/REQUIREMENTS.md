@@ -71,7 +71,7 @@ Requirements for this milestone. Each maps to roadmap phases.
 - [ ] **ADMIN-06**: Admin can delete blog posts
 - [ ] **ADMIN-07**: Admin can add, edit, and delete testimonials
 - [ ] **ADMIN-08**: Public gallery, blog, and testimonials pages render from database
-- [ ] **ADMIN-09**: Database tables (gallery_images, blog_posts, testimonials) in HouseFinder PostgreSQL
+- [x] **ADMIN-09**: Database tables (gallery_images, blog_posts, testimonials) in HouseFinder PostgreSQL
 - [ ] **ADMIN-10**: Images served from Azure Blob Storage URLs with optimization
 
 ## v2 Requirements
@@ -144,7 +144,7 @@ Deferred to future milestone. Tracked but not in current roadmap.
 | ADMIN-06 | Phase 7 | Pending |
 | ADMIN-07 | Phase 7 | Pending |
 | ADMIN-08 | Phase 7 | Pending |
-| ADMIN-09 | Phase 7 | Pending |
+| ADMIN-09 | Phase 7 | Complete |
 | ADMIN-10 | Phase 7 | Pending |
 
 **Coverage:**
