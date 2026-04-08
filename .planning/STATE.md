@@ -10,9 +10,9 @@ See: .planning/PROJECT.md (updated 2026-04-05)
 ## Current Position
 
 Phase: 5 of 5 (Voice Lead Pipeline)
-Plan: 0 of TBD in current phase
-Status: Ready to plan
-Last activity: 2026-04-07 — Phase 4 complete (Analytics & SEO)
+Plan: 1 of TBD in current phase
+Status: In progress
+Last activity: 2026-04-08 — Plan 05-01 complete (Voice Lead API Intake)
 
 Progress: [████████░░] 80%
 
@@ -57,6 +57,10 @@ Recent decisions affecting current work:
 - [Phase 04]: GA4 gated on NEXT_PUBLIC_GA_ID + production NODE_ENV — no tracking in dev/preview
 - [Phase 04]: LLC address placeholders used in JSON-LD — user to supply address when available
 
+- 05-01: source defaults to 'website' when omitted — existing website form flow unchanged
+- 05-01: name and address made optional with empty-string defaults — voicemail leads POST with phone+message+source only
+- 05-01: noteLines conditionally includes Name/Address — omit when empty rather than printing blank lines
+
 ### Pending Todos
 
 None yet.
@@ -69,6 +73,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-07
-Stopped at: Phase 4 complete — GA4 (G-33FK8CFR8D), GSC verified, sitemap submitted, structured data live, GBP created under admin@no-bshomes.com (pending postcard). Ready for Phase 5 (Voice Lead Pipeline).
+Last session: 2026-04-08
+Stopped at: Phase 5 Plan 01 complete — /api/leads updated for voicemail source (optional name/address), LEAD_SOURCES has website+voicemail badges, VALID_LEAD_SOURCES includes voicemail. Ready for Plan 02 (Google Apps Script pipeline).
 Resume file: None
