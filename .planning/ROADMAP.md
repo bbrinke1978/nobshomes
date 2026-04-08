@@ -17,7 +17,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 3: Lead Integration** - Build HouseFinder API endpoint and wire dual-submit contact form
 - [x] **Phase 4: Analytics & SEO** - GA4, Google Search Console, sitemap, structured data, Google Business Profile
 - [x] **Phase 5: Voice Lead Pipeline** - Google Voice voicemail transcription → HouseFinder lead automation
-- [ ] **Phase 6: Content & Gallery** - Testimonials section, blog system, project gallery page
+- [x] **Phase 6: Content & Gallery** - Testimonials section, blog system, project gallery page
 
 ## Phase Details
 
@@ -108,8 +108,8 @@ Plans:
   6. Navigation header includes Blog and Gallery links
 **Plans**: 2 plans
 Plans:
-- [ ] 06-01-PLAN.md — Testimonials section on homepage + gallery page with responsive image grid
-- [ ] 06-02-PLAN.md — Markdown blog system with sample post + navigation update
+- [x] 06-01-PLAN.md — Testimonials section on homepage + gallery page with responsive image grid
+- [x] 06-02-PLAN.md — Markdown blog system with sample post + navigation update
 
 ## Progress
 
@@ -123,4 +123,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | 3. Lead Integration | 2/2 | Complete ✓ | 2026-04-06 |
 | 4. Analytics & SEO | 2/2 | Complete ✓ | 2026-04-07 |
 | 5. Voice Lead Pipeline | 3/3 | Complete ✓ | 2026-04-07 |
-| 6. Content & Gallery | 0/2 | Not started | - |
+| 6. Content & Gallery | 2/2 | Complete ✓ | 2026-04-07 |
