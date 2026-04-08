@@ -49,6 +49,27 @@ const situations = [
   "Relocating and need to sell fast",
 ];
 
+const testimonials = [
+  {
+    name: "Sarah M.",
+    location: "Salt Lake City, UT",
+    quote: "They gave us a fair offer and closed in 10 days. No runaround, no hidden fees. Exactly what they promised.",
+    stars: 5,
+  },
+  {
+    name: "James & Linda R.",
+    location: "Provo, UT",
+    quote: "We were behind on payments and didn't know what to do. Brian and Shawn treated us like family, not a transaction.",
+    stars: 5,
+  },
+  {
+    name: "Michael T.",
+    location: "Price, UT",
+    quote: "Inherited my mom's house and it needed too much work. They bought it as-is and I had cash in hand within two weeks.",
+    stars: 5,
+  },
+];
+
 export default function HomePage() {
   return (
     <>
@@ -259,6 +280,42 @@ export default function HomePage() {
               Learn more about our process
               <ArrowRight className="h-4 w-4" />
             </Link>
+          </div>
+        </section>
+
+        {/* ── Testimonials ── */}
+        <section className="py-16 sm:py-20 bg-cream">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <div className="text-center mb-12">
+              <h2
+                className="text-3xl sm:text-4xl font-bold mb-3"
+                style={{ fontFamily: "var(--font-display)" }}
+              >
+                What Homeowners Are Saying
+              </h2>
+              <p className="text-slate-600 max-w-2xl mx-auto">
+                Real stories from real people we&apos;ve helped.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {testimonials.map((t) => (
+                <div key={t.name} className="bg-white rounded-2xl p-6 trust-glow">
+                  <div className="flex gap-1 mb-4">
+                    {Array.from({ length: t.stars }).map((_, i) => (
+                      <Star key={i} className="h-4 w-4 text-yellow-400 fill-yellow-400" />
+                    ))}
+                  </div>
+                  <p className="text-slate-600 text-sm leading-relaxed italic mb-4">
+                    &ldquo;{t.quote}&rdquo;
+                  </p>
+                  <div>
+                    <p className="font-bold text-slate-800">{t.name}</p>
+                    <p className="text-xs text-slate-500">{t.location}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
