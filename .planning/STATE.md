@@ -85,6 +85,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-05
-Stopped at: Phase 6 Plan 01 complete — homepage testimonials section and /gallery page with data manifest pattern shipped. User should replace placeholder testimonials/images with real content.
+Last session: 2026-04-07
+Stopped at: Phase 7 Wave 1 complete — 07-01 (DB + schema + seed) and 07-02 (auth + admin shell) both done. Wave 2 (07-03 gallery admin + Azure Blob) ready to execute. USER ACTION NEEDED: Create Google OAuth client in Google Cloud Console and provide Client ID + Secret. Then continue with /gsd:execute-phase 7 for waves 2-3.
 Resume file: None
