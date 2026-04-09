@@ -39,6 +39,7 @@ Progress: [████████░░] 86%
 | Phase 06-content-gallery P02 | 2 minutes | 2 tasks | 8 files |
 | Phase 07-admin-portal P02 | 3min | 2 tasks | 8 files |
 | Phase 07-admin-portal P01 | 15min | 2 tasks | 8 files |
+| Phase 07-admin-portal P03 | 25min | 2 tasks | 9 files |
 
 ## Accumulated Context
 
@@ -72,6 +73,8 @@ Recent decisions affecting current work:
 - [Phase 07-02]: Admin layout is nested fragment (no html/body) — root layout owns document structure in Next.js App Router
 - [Phase 07-admin-portal]: tablesFilter nbs_* isolates Drizzle Kit from HouseFinder tables — prevents accidental table drops on shared DB
 - [Phase 07-admin-portal]: drizzle-kit migrate (not push) used for shared prod DB — reviewable SQL audit trail, no destructive schema sync
+- [Phase 07-admin-portal]: Store 1-year read SAS URL in DB as blobUrl — avoids on-the-fly SAS generation per gallery render while keeping container access blocked
+- [Phase 07-admin-portal]: force-dynamic on /gallery page — DB query cannot run at Next.js build time (no DB connection during Netlify build)
 
 ### Pending Todos
 
