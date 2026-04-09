@@ -67,10 +67,10 @@ Requirements for this milestone. Each maps to roadmap phases.
 - [x] **ADMIN-02**: Only allowlisted @no-bshomes.com emails (brian, shawn, admin) can access admin
 - [x] **ADMIN-03**: Admin can drag-and-drop upload gallery images to Azure Blob Storage
 - [x] **ADMIN-04**: Admin can manage gallery images (add, reorder, delete, edit captions)
-- [ ] **ADMIN-05**: Admin can create and edit blog posts with rich text editor
-- [ ] **ADMIN-06**: Admin can delete blog posts
-- [ ] **ADMIN-07**: Admin can add, edit, and delete testimonials
-- [ ] **ADMIN-08**: Public gallery, blog, and testimonials pages render from database
+- [x] **ADMIN-05**: Admin can create and edit blog posts with rich text editor
+- [x] **ADMIN-06**: Admin can delete blog posts
+- [x] **ADMIN-07**: Admin can add, edit, and delete testimonials
+- [x] **ADMIN-08**: Public gallery, blog, and testimonials pages render from database
 - [x] **ADMIN-09**: Database tables (gallery_images, blog_posts, testimonials) in HouseFinder PostgreSQL
 - [x] **ADMIN-10**: Images served from Azure Blob Storage URLs with optimization
 
@@ -140,10 +140,10 @@ Deferred to future milestone. Tracked but not in current roadmap.
 | ADMIN-02 | Phase 7 | Complete |
 | ADMIN-03 | Phase 7 | Complete |
 | ADMIN-04 | Phase 7 | Complete |
-| ADMIN-05 | Phase 7 | Pending |
-| ADMIN-06 | Phase 7 | Pending |
-| ADMIN-07 | Phase 7 | Pending |
-| ADMIN-08 | Phase 7 | Pending |
+| ADMIN-05 | Phase 7 | Complete |
+| ADMIN-06 | Phase 7 | Complete |
+| ADMIN-07 | Phase 7 | Complete |
+| ADMIN-08 | Phase 7 | Complete |
 | ADMIN-09 | Phase 7 | Complete |
 | ADMIN-10 | Phase 7 | Complete |
 
