@@ -4,6 +4,8 @@ import Google from "next-auth/providers/google";
 const ALLOWED_EMAILS = [
   "brian@no-bshomes.com",
   "shawn@no-bshomes.com",
+  "admin@no-bshomes.com",
+  "contact@no-bshomes.com",
 ];
 
 export const { auth, handlers, signIn, signOut } = NextAuth({
