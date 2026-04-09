@@ -10,6 +10,10 @@
   "dependencies": {
     "@azure/storage-blob": "^12.31.0",
     "@next/third-parties": "^16.2.2",
+    "@tiptap/extension-image": "^3.22.3",
+    "@tiptap/pm": "^3.22.3",
+    "@tiptap/react": "^3.22.3",
+    "@tiptap/starter-kit": "^3.22.3",
     "drizzle-orm": "^0.45.2",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.577.0",
