@@ -4,12 +4,12 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, Phone } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { getAllPosts, getPostBySlug, markdownToHtml } from "@/lib/blog";
 import { contactData } from "@/lib/contact-data";
+import { db } from "@/lib/db";
+import { nbsBlogPosts } from "@/lib/schema";
+import { eq } from "drizzle-orm";
 
-export function generateStaticParams() {
-  return getAllPosts().map((post) => ({ slug: post.slug }));
-}
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
@@ -17,7 +17,12 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const post = getPostBySlug(slug);
+  const [post] = await db
+    .select()
+    .from(nbsBlogPosts)
+    .where(eq(nbsBlogPosts.slug, slug))
+    .limit(1);
+
   if (!post) return { title: "Post Not Found | No BS Homes" };
   return {
     title: `${post.title} | No BS Homes`,
@@ -31,13 +36,15 @@ export default async function BlogPostPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post = getPostBySlug(slug);
+  const [post] = await db
+    .select()
+    .from(nbsBlogPosts)
+    .where(eq(nbsBlogPosts.slug, slug))
+    .limit(1);
 
-  if (!post) {
+  if (!post || !post.published) {
     notFound();
   }
-
-  const htmlContent = markdownToHtml(post.content);
 
   return (
     <>
@@ -60,17 +67,17 @@ export default async function BlogPostPage({
 
           {/* Date */}
           <p className="mt-3 text-sm text-slate-500">
-            {new Date(post.date).toLocaleDateString("en-US", {
+            {new Date(post.createdAt).toLocaleDateString("en-US", {
               year: "numeric",
               month: "long",
               day: "numeric",
             })}
           </p>
 
-          {/* Content */}
+          {/* Content — HTML from TipTap editor */}
           <div
             className="mt-8 prose-custom [&>h2]:text-2xl [&>h2]:font-bold [&>h2]:text-brand-500 [&>h2]:mt-8 [&>h2]:mb-4 [&>h2]:font-[var(--font-display)] [&>p]:text-slate-600 [&>p]:leading-relaxed [&>p]:mb-4 [&>ul]:list-disc [&>ul]:pl-6 [&>ul]:mb-4 [&>ul>li]:text-slate-600 [&>ul>li]:mb-2 [&>a]:text-brand-500"
-            dangerouslySetInnerHTML={{ __html: htmlContent }}
+            dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
           {/* CTA */}
